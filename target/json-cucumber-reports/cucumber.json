@@ -1,0 +1,81 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5588051900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Criar movimentação",
+        "description": "",
+        "id": "movimentação;criar-movimentação",
+        "after": [
+          {
+            "result": {
+              "duration": 1254600000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9533572300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "eu tenha acessado a pagina de movimentacao",
+            "match": {
+              "location": "MovimentacaoSteps.euTenhaAcessadoAPaginaDeMovimentacao()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2702724100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "eu criar a movimentacao",
+            "match": {
+              "location": "MovimentacaoSteps.euCriarAMovimentacao()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 464202500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "devo ver o valor",
+            "match": {
+              "location": "MovimentacaoSteps.devoVerOValor()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Movimentação",
+    "description": "",
+    "id": "movimentação",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/Movimentacao.feature",
+    "tags": []
+  }
+]
