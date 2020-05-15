@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="19.559266">
-<testcase classname="Movimentação" name="Criar movimentação" time="19.559266">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.556863">
+<testcase classname="Movimentação" name="Criar movimentação" time="20.556863">
 <system-out><![CDATA[Dado eu tenha acessado a pagina de movimentacao.............................passed
 Quando eu criar a movimentacao..............................................passed
 Entao devo ver o valor......................................................passed

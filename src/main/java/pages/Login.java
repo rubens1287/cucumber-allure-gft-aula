@@ -4,6 +4,7 @@ import driver.DriverManagerFactory;
 import hooks.DefaultProperties;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import report.Report;
 
 import static org.junit.Assert.assertEquals;
 
@@ -25,6 +26,7 @@ public class Login extends DriverManagerFactory implements DefaultProperties {
 
     public void acessaAplicacao() {
         getDriver().get(URL_BASE);
+        Report.takeScreenshot();
     }
 
     public boolean validaCadastro(String valCadastro) {
@@ -36,6 +38,7 @@ public class Login extends DriverManagerFactory implements DefaultProperties {
     public void entra(String email, String senha) {
         txtEmail.sendKeys(email);
         txtSenha.sendKeys(senha);
+        Report.takeScreenshot();
         btnEntrar.click();
     }
 

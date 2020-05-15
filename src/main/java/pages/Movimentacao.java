@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
+import report.Report;
 
 import static org.junit.Assert.assertEquals;
 
@@ -50,6 +51,7 @@ public class Movimentacao  {
         txtInteressado.sendKeys(interessado);
         txtValor.sendKeys(valor);
         txtConta.sendKeys(conta);
+        Report.takeScreenshot();
         if(situacao == "pendente"){
             rdoPendente.click();}
         if (situacao == "pago"){
